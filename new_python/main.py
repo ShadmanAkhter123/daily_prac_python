@@ -1,17 +1,20 @@
+##Perfect number in python
 
+n= int(input("Enter the number: "))
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+b=[]
+a= 1
+while a<=n/2:
+    i= n%a
+    if i==0:
+        b.append(a)
+    a+=1
 
+for j in range(len(b)):
+    b[j]+=b[j]
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+if b[j]==n:
+    print("perfect number")
+else:
+    print("not a perfect number")
 
-# python dictionary
-
-key= {
-    "Name":"Shadman Akhter Khan"
-
-}
