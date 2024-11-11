@@ -1,4 +1,4 @@
-##Perfect number in python
+##Armstrong number in python
 
 n= int(input("input a number: "))
 
@@ -18,7 +18,5 @@ else:
 
 
 
-# b= int(4/10)
-# print(b)
 
 
