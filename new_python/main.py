@@ -1,20 +1,24 @@
 ##Perfect number in python
 
-n= int(input("Enter the number: "))
+n= int(input("input a number: "))
 
-b=[]
-a= 1
-while a<=n/2:
-    i= n%a
-    if i==0:
-        b.append(a)
-    a+=1
+c=n
+d=0
 
-for j in range(len(b)):
-    b[j]+=b[j]
+while c>0:
+    b=int(c%10)
+    d= d+b*b*b
+    c = int(c/10)
 
-if b[j]==n:
-    print("perfect number")
+if d==n:
+    print("armstrong number")
 else:
-    print("not a perfect number")
+    print("not armstrong")
+
+
+
+
+# b= int(4/10)
+# print(b)
+
 
