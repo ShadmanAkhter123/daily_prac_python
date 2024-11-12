@@ -1,19 +1,19 @@
-##Armstrong number in python
+##Strong number
 
-n= int(input("input a number: "))
+def factorial(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
 
-c=n
-d=0
+n= int(input("Enter the number: "))
 
-while c>0:
-    b=int(c%10)
-    d= d+b*b*b
-    c = int(c/10)
+while
+    b=n%10
+    c=
 
-if d==n:
-    print("armstrong number")
-else:
-    print("not armstrong")
+
+
 
 
 
