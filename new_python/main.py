@@ -7,10 +7,18 @@ def factorial(n):
         return n*factorial(n-1)
 
 n= int(input("Enter the number: "))
+c=n
+r=0
 
-while
-    b=n%10
-    c=
+while c>0:
+    b=c%10
+    r= r+factorial(b)
+    c= c//10
+
+if r==n:
+    print("Its a strong number")
+else:
+    print("it's not a strong number")
 
 
 
