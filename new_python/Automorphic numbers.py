@@ -4,19 +4,23 @@
 n= int(input("enter the number: "))
 
 c = n
-r=0
+r=10
 s=n*n
 y=s
-x= []
-while c >= 1:
-    b = c % 10
-    a= y%10
+x= False
 
-    x.append(a)
-    y=int(y/10)
-    c = c // 10
-x.reverse()
+while y > 0:
+    b= y%10
+    a= s%r
+    if a==n:
+        x= True
+        break
+    y=y//10
+
+    r= r*10
 
 
-
-print(x)
+if x:
+    print("automorphic number")
+else:
+    print("not a automorphic number")
